@@ -23,7 +23,7 @@ end
 end
 
 def valid_phone_number?(phone)
- if phone.scan(/(\d{10})[-. )]*(\d{3})[-. ]*(\d{4})/)
+ if phone.scan(/([0-9]*?){10}/)
    true
  else false
 end
